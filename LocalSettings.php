@@ -100,11 +100,11 @@ $wgShellLocale = "en_US.utf8";
 $wgLanguageCode = "en";
 
 #Useless/deprecated anyway - see http://www.mediawiki.org/wiki/Manual:$wgSecretKey
-$wgSecretKey = "7ab1085a519580c3313d8eaa6b554277a71398dfc6cac72dd800e35485f02d3d";
+$wgSecretKey = "6ab1085a519580c3313d8eaa6b554277a71398dfc6cac72dd800e35485f02d3d";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "5a41c0ff494265fe";
+$wgUpgradeKey = "4a41c0ff494265fe";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
