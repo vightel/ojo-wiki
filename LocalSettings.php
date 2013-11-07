@@ -18,7 +18,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "BitcoinX";
+$wgSitename      = "OJO Wiki";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -29,7 +29,7 @@ $wgScriptPath       = "";
 $wgScriptExtension  = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer           = "http://wiki.bitcoinx.org";
+$wgServer           = "http://ojo-wiki.herokuapp.com";
 
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
@@ -43,8 +43,8 @@ $wgLogo             = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
-$wgEmergencyContact = "noreply@bitcoinx.org";
-$wgPasswordSender   = "noreply@bitcoinx.org";
+$wgEmergencyContact = "dalia.b.kirschbaum@nasa.gov";
+$wgPasswordSender   = "dalia.b.kirschbaum@nasa.gov";
 
 $wgEnotifUserTalk      = true; # UPO
 $wgEnotifWatchlist     = true; # UPO
@@ -100,11 +100,11 @@ $wgShellLocale = "en_US.utf8";
 $wgLanguageCode = "en";
 
 #Useless/deprecated anyway - see http://www.mediawiki.org/wiki/Manual:$wgSecretKey
-$wgSecretKey = "6ab1085a519580c3313d8eaa6b554277a71398dfc6cac72dd800e35485f02d3d";
+$wgSecretKey = "7ab1085a519580c3313d8eaa6b554277a71398dfc6cac72dd800e35485f02d3d";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "4a41c0ff494265fe";
+$wgUpgradeKey = "5a41c0ff494265fe";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
