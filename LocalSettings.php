@@ -146,3 +146,8 @@ require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['read'] = true;
 
+error_reporting( -1 );
+ini_set( 'display_errors', 1 );
+$wgDBerrorLog = '/tmp/mediawiki.log';
+
+
