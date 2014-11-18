@@ -146,7 +146,7 @@ require_once "$IP/extensions/WikiEditor/WikiEditor.php";
 
 # End of automatically generated settings.
 # Add more configuration options below.
-require_once 'Mail.php';
+#require_once 'Mail.php';
 
 $wgSMTP = array(
 'host' => "smtp.sendgrid.net",
