@@ -150,7 +150,7 @@ require_once "$IP/extensions/WikiEditor/WikiEditor.php";
 
 $wgSMTP = array(
 'host' => "smtp.sendgrid.net",
-'IDHost' => "heroku.com",
+'IDHost' => "herokuapp.com",
 'port' => 587,
 'auth' => true,
 'username' => getenv('SENDGRID_USERNAME'),
