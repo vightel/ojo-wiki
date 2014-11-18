@@ -419,8 +419,6 @@ class LoadBalancer {
 	 */
 	public function &getConnection( $i, $groups = array(), $wiki = false ) {
 		wfProfileIn( __METHOD__ );
-    
-		wfDebug( "DB getConnection now\n" );
 
 		if ( $i == DB_LAST ) {
 			wfProfileOut( __METHOD__ );
@@ -470,8 +468,6 @@ class LoadBalancer {
 				return $this->reportConnectionError();
 			}
 		}
-    
-		wfDebug( "DB open connection now\n" );
 
 		# Now we have an explicit index into the servers array
 		$conn = $this->openConnection( $i, $wiki );
@@ -739,15 +735,6 @@ class LoadBalancer {
 		return $db;
 	}
 
-  /* PGC */
-  private function callStack($stacktrace) {
-    print str_repeat("=", 50) ."\n";
-    $i = 1;
-    foreach($stacktrace as $node) {
-      print "$i. ".basename($node['file']) .":" .$node['function'] ."(" .$node['line'].")\n";
-      $i++;
-    }
-  } 
 	/**
 	 * @throws DBConnectionError
 	 * @return bool
@@ -763,9 +750,7 @@ class LoadBalancer {
 			throw new DBConnectionError( null, $this->mLastError );
 		} else {
 			$server = $conn->getProperty( 'mServer' );
-			wfLogDBError( "Sorry Connection error: {$this->mLastError} ({$server})" );
-      $this->callStack(debug_backtrace());
-      
+			wfLogDBError( "Connection error: {$this->mLastError} ({$server})" );
 			$conn->reportConnectionError( "{$this->mLastError} ({$server})" ); // throws DBConnectionError
 		}
 

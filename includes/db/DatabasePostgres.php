@@ -368,8 +368,6 @@ class DatabasePostgres extends DatabaseBase {
 	 * @return DatabaseBase|null
 	 */
 	function open( $server, $user, $password, $dbName ) {
-		wfDebug( "DB Postgres Open connection\n" );
-    
 		# Test for Postgres support, to avoid suppressed fatal error
 		if ( !function_exists( 'pg_connect' ) ) {
 			throw new DBConnectionError(
@@ -408,7 +406,7 @@ class DatabasePostgres extends DatabaseBase {
 		}
 
 		$this->connectString = $this->makeConnectionString( $connectVars, PGSQL_CONNECT_FORCE_NEW );
-	 	$this->close();
+		$this->close();
 		$this->installErrorHandler();
 
 		try {

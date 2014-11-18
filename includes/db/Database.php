@@ -957,8 +957,7 @@ abstract class DatabaseBase implements IDatabase, DatabaseType {
 	 * @param string $error Fallback error message, used if none is given by DB
 	 * @throws DBConnectionError
 	 */
-	function reportConnectionError( $error = 'Unknown Connection Error' ) {
-    wfWarn("PGC report Error");
+	function reportConnectionError( $error = 'Unknown error' ) {
 		$myError = $this->lastError();
 		if ( $myError ) {
 			$error = $myError;

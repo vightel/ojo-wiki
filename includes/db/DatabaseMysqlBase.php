@@ -56,7 +56,6 @@ abstract class DatabaseMysqlBase extends DatabaseBase {
 	function open( $server, $user, $password, $dbName ) {
 		global $wgAllDBsAreLocalhost, $wgSQLMode;
 		wfProfileIn( __METHOD__ );
-		wfDebug( "DB MySQL Open connection\n" );
 
 		# Debugging hack -- fake cluster
 		if ( $wgAllDBsAreLocalhost ) {
