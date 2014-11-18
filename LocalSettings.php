@@ -158,3 +158,4 @@ $wgSMTP = array(
 );
 
 $wgDebugLogFile = "/app/tmp/mediawiki.log";
+$wgShowExceptionDetails= true
