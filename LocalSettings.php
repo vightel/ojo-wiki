@@ -155,5 +155,4 @@ $wgSMTP = array(
 'password' => getenv('SENDGRID_PASSWORD')
 );
 
-$wgDebugLogFile = "/tmp/mediawiki.log";
-wfErrorLog("Started...")
+$wgDebugLogFile = "/app/tmp/mediawiki.log";
