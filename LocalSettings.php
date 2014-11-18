@@ -146,4 +146,11 @@ require_once "$IP/extensions/WikiEditor/WikiEditor.php";
 
 # End of automatically generated settings.
 # Add more configuration options below.
-
+$wgSMTP = array(
+'host' => "mail.sendgrid.com",
+'IDHost' => "ojo-wiki.herokuapp.com",
+'port' => 25,
+'auth' => true,
+'username' => getenv('SENDGRID_USERNAME'),
+'password' => getenv('SENDGRID_PASSWORD')
+);
