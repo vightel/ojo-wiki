@@ -703,7 +703,7 @@ END;
 	}
 
 	protected function setDefault( $table, $field, $default ) {
-		$this->output( "trying to Change table ' $table ' field' $field ' default value " $default );
+		$this->output( "trying to Change table ' $table ' field' $field ' default value ' $default );
 
 		$info = $this->db->fieldInfo( $table, $field );
 		if ( $info->defaultValue() !== $default ) {
